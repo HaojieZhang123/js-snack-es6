@@ -26,3 +26,5 @@ for (let i = 0; i < bikes.length; i++) {
     }
 }
 
+// Stampo risultato in console
+console.log(`La bici con peso minore è ${bikeMin.name}: ${bikeMin.weight} kg`);

@@ -97,3 +97,9 @@ const teams = [
 
 // funzione per generare numeri random
 const RNG = (min, max) => Math.floor(Math.random() * (max - min + 1) + min);
+
+// assegnazione punti random e falli random a tutte le squadre
+for (let i = 0; i < teams.length; i++) {
+    teams[i].points = RNG(0, 100);
+    teams[i].foul = RNG(0, 100);
+}

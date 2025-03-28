@@ -13,6 +13,16 @@ const bikes = [
     },
     {
         name: 'bici 3',
-        weight: 30
+        weight: 5
     }
 ]
+
+// ricerca bici con peso minore
+let bikeMin = bikes [0];
+
+for (let i = 0; i < bikes.length; i++) {
+    if (bikes[i].weight < bikeMin.weight) {
+        bikeMin = bikes[i];
+    }
+}
+

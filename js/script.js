@@ -105,6 +105,7 @@ for (let i = 0; i < teams.length; i++) {
     teams[i].points = RNG(0, 100);
     teams[i].foul = RNG(0, 100);
 }
+console.log(teams);
 
 // assegnazione nomi e falli subiti a nuovo array
 for (let i = 0; i < teams.length; i++) {
@@ -113,3 +114,4 @@ for (let i = 0; i < teams.length; i++) {
         foul: teams[i].foul
     });
 }
+console.log(teamsFoul);

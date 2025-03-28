@@ -94,3 +94,6 @@ const teams = [
         foul: 0
     }
 ]
+
+// funzione per generare numeri random
+const RNG = (min, max) => Math.floor(Math.random() * (max - min + 1) + min);

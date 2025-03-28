@@ -94,6 +94,8 @@ const teams = [
         foul: 0
     }
 ]
+// creazione nuovo array contenente solo nomi e falli subiti
+const teamsFoul = [];
 
 // funzione per generare numeri random
 const RNG = (min, max) => Math.floor(Math.random() * (max - min + 1) + min);
@@ -102,4 +104,12 @@ const RNG = (min, max) => Math.floor(Math.random() * (max - min + 1) + min);
 for (let i = 0; i < teams.length; i++) {
     teams[i].points = RNG(0, 100);
     teams[i].foul = RNG(0, 100);
+}
+
+// assegnazione nomi e falli subiti a nuovo array
+for (let i = 0; i < teams.length; i++) {
+    teamsFoul.push({
+        name: teams[i].name,
+        foul: teams[i].foul
+    });
 }
